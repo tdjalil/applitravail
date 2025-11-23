@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appli Révisions Mega</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Appli de Révisions Mega</h1>
+
+        <div class="fiche">
+            <h2 id="ficheTitle">Titre de la fiche</h2>
+            <p id="ficheContent">Contenu de la fiche...</p>
+        </div>
+
+        <div class="controls">
+            <button id="genFiche">Générer fiche</button>
+            <button id="prevFiche">Précédente</button>
+            <button id="nextFiche">Suivante</button>
+            <button id="saveFiches">Sauvegarder</button>
+        </div>
+
+        <div class="quiz-card">
+            <h3 id="quizQuestion">Question ici</h3>
+            <div id="quizOptions" class="options"></div>
+            <p id="quizFeedback"></p>
+            <button id="nextQuestion">Question suivante</button>
+        </div>
+
+        <div class="score">
+            Score : <span id="score">0</span> / <span id="totalQuestions">0</span>
+        </div>
+
+        <div class="tableau">
+            <h3>Tableau des fiches</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Sujet</th>
+                        <th>Contenu</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
